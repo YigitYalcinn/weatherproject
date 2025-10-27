@@ -19,11 +19,7 @@ export function useSearchHistory () {
     "search-history",
     [] 
   );
-
   const queryClient = useQueryClient();
-
-
-
   const historyQuery = useQuery ({
     queryKey: ["search-history"],
     queryFn: () => history,
@@ -37,6 +33,7 @@ export function useSearchHistory () {
       const newSearch: SearchHistoryItem = {
         ...search,
         id: `${search.lat}-${search.lon}-${Date.now()}`,
+        searchedAt: Date.now(),
       };
       const filteredHistory = history.filter (
         (item) => !(item.lat === search.lat && item.lon === search.lon)
@@ -64,7 +61,7 @@ export function useSearchHistory () {
   return {
     history:historyQuery.data ?? [],
     addToHistory,
-    clearHistory
+    clearHistory,
   };
 
 
