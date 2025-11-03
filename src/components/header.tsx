@@ -14,6 +14,7 @@ const Header  =   () => {
         <img 
         src="/logo.png" alt="Climetable logo" className='h-14' />
         </Link>
+        <h1 className="flex mr-auto font-bold">CLIMETABLE</h1>
         
         <div className='flex gap-4'> 
           <CitySearch  />

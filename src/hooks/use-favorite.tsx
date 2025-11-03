@@ -12,8 +12,7 @@ interface FavoriteCity {
 }
 
 
-
-export function useFavorite () {
+export function useFavorites () {
   const [favorites, setFavorites] = useLocalStorage<FavoriteCity[]>(
     "favorites",
     [] 
@@ -46,7 +45,6 @@ export function useFavorite () {
       return newFavorites;
 
     },
-
 
     onSuccess:()=>{
       queryClient.invalidateQueries({
