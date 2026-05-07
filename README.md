@@ -1,39 +1,53 @@
 # 🌦️ CLIMETABLE // WeatherProject
 
-A simple and fast **Weather App** built with **React + TypeScript + Vite**.  
-It allows users to search for a city and view current weather information such as temperature, humidity, and wind speed — powered by the **OpenWeather API**.
+CLIMETABLE is a modern and responsive weather application built with **React, TypeScript, and Vite**.
 
-Live -> https://weatherprojectdeployment.vercel.app
+Users can search for any city, view current weather details, check the 5-day forecast, get weather data based on their current location, switch between light/dark themes, and save favorite cities.
 
+The project uses the **OpenWeather API** and is deployed on **Vercel**.
 
----
+## 🔗 Live Demo
+
+[View Live Project](https://weatherprojectdeployment.vercel.app)
 
 ## ✨ Features
+
 - 🔍 City-based weather search
-- 🌤️ Real-time data from OpenWeather API
-- ⚡ Built with Vite + React (TypeScript)
+- 📍 Location-based weather data
+- 🌤️ Real-time current weather information
+- 📅 5-day weather forecast
+- 🌡️ Temperature, humidity, and wind speed details
+- ⭐ Favorite cities feature
+- 🌓 Light/dark theme support
 - 📱 Fully responsive modern UI
 - 💬 User-friendly error handling
-
----
+- ⚡ Fast and lightweight structure with Vite
 
 ## 🧰 Tech Stack
-- **React 18 + TypeScript**
-- **Vite**
-- **Tailwind CSS** *(if used)*
-- **Axios** *(or Fetch API)*
-- **OpenWeather API**
 
----
+- React 18
+- TypeScript
+- Vite
+- OpenWeather API
+- Vercel
 
-## 🚀 Getting Started
+- ## 🎯 What I Learned
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/YigitYalcinn/weatherproject.git
-cd weatherproject
-2️⃣ Install dependencies
-npm install
-3️⃣ Start the development server
-npm run dev
-The app runs locally at http://localhost:5173
+While building this project, I practiced:
+
+- Fetching and managing data from an external API
+- Working with multiple weather endpoints
+- Managing user input and application state in React
+- Implementing location-based features
+- Creating a light/dark theme structure
+- Building reusable components
+- Improving responsive UI design
+- Deploying a frontend project with Vercel
+
+- ## 📌 Possible Improvements
+
+- Add hourly weather forecast
+- Add weather alerts
+- Add multi-language support
+- Improve animations and micro-interactions
+- Add unit selection for Celsius/Fahrenheit
