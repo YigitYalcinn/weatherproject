@@ -3,6 +3,8 @@
 A simple and fast **Weather App** built with **React + TypeScript + Vite**.  
 It allows users to search for a city and view current weather information such as temperature, humidity, and wind speed — powered by the **OpenWeather API**.
 
+Live -> weatherprojectdeployment.vercel.app
+
 ---
 
 ## ✨ Features
