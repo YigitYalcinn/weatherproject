@@ -12,6 +12,10 @@ class WeatherAPI {
     params:Record<string,string | number>
 
   ) {
+    if (!API_CONFIG.API_KEY) {
+      throw new Error("Missing OpenWeather API key.");
+    }
+
     const searchParams = new URLSearchParams ({
       appid:API_CONFIG.API_KEY,
       ...params,

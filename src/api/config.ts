@@ -1,8 +1,4 @@
-const OPENWEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
-
-if (!OPENWEATHER_API_KEY) {
-  throw new Error("Missing VITE_OPENWEATHER_API_KEY environment variable.");
-}
+const OPENWEATHER_API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY ?? "";
 
 export const API_CONFIG = {
   BASE_URL: "https://api.openweathermap.org/data/2.5",
