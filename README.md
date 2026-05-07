@@ -1,10 +1,10 @@
 # CLIMETABLE // WeatherProject
 
-CLIMETABLE is a modern and responsive weather application built with React, TypeScript, and Vite.
+CLIMETABLE is a small weather app I built with React, TypeScript, and Vite.
 
-Users can search for any city, view current weather details, check the 5-day forecast, get weather data based on their current location, switch between light/dark themes, and save favorite cities.
+It supports city search, current location weather, a 5-day forecast, theme switching, and favorite cities.
 
-The project uses the OpenWeather API and is deployed on Vercel.
+Weather data comes from the OpenWeather API. The project is deployed on Vercel.
 
 ## Live Demo
 
@@ -14,14 +14,13 @@ The project uses the OpenWeather API and is deployed on Vercel.
 
 - City-based weather search
 - Location-based weather data
-- Real-time current weather information
+- Current weather information
 - 5-day weather forecast
 - Temperature, humidity, and wind speed details
 - Favorite cities feature
 - Light/dark theme support
-- Fully responsive modern UI
-- User-friendly error handling
-- Fast and lightweight structure with Vite
+- Responsive layout
+- Loading and error states
 
 ## Tech Stack
 
@@ -68,13 +67,13 @@ The app runs locally at `http://localhost:5173`.
 
 ## Environment Variables
 
-This project expects:
+Create a `.env` file in the project root and add:
 
 ```bash
 VITE_OPENWEATHER_API_KEY=your_openweather_api_key_here
 ```
 
-Do not commit `.env`. Vite exposes `VITE_` variables to the browser bundle, so this keeps the key out of GitHub source code but does not make it secret from users of the running frontend app.
+The `.env` file is ignored by Git. Since this is a Vite frontend project, variables starting with `VITE_` are still included in the browser build.
 
 ## What I Learned
 
@@ -86,7 +85,7 @@ While building this project, I practiced:
 - Implementing location-based features
 - Creating a light/dark theme structure
 - Building reusable components
-- Improving responsive UI design
+- Improving the responsive layout
 - Deploying a frontend project with Vercel
 
 ## Possible Improvements
